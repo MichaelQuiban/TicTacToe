@@ -1,14 +1,16 @@
 .board {
-	width: 200px;
-	height: 200px;
+	width: 300px;
+	height: 300px;
 	margin: 0 auto;
 	margin-top: 200px;
-	background-color: red;
+	background-color: #F0E9DB;
 	position: relative;
+	border-radius: 5px;
 }
 
-.upper-text {
+/* Some font stuff, totally unrelated to the board itself. */
+.fancy-text {
 	font-size: 2em;
 	font-family: 'Cormorant Garamond', serif;
-
+	position: relative;
 }
