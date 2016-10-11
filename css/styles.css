@@ -1,0 +1,14 @@
+.board {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	margin-top: 200px;
+	background-color: red;
+	position: relative;
+}
+
+.upper-text {
+	font-size: 2em;
+	font-family: 'Cormorant Garamond', serif;
+
+}
