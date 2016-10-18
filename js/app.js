@@ -10,20 +10,20 @@ $(document).ready(function(){
 		//Debug text to display what 'this' is.
 		console.log(this);
 		// When the square has a class of 'ex' or 'oh' display a message.
-		if (squareSelected.hasClass('ex') || squareSelected.hasClass('oh')) {
+		if (squareSelected.hasClass('fa fa-heart') || squareSelected.hasClass('fa fa-circle-thin')) {
 			alert("This square has already been selected! Please select another.");
 		} else {
 			// Bounce back and forth between the two players.
 			if (player === 1){
-				squareSelected.addClass("ex");
-				if(whowondisgame("ex")) {
+				squareSelected.addClass("fa fa-heart");
+				if(whowondisgame("fa fa-heart")) {
 					alert("Congrats! Player " + player + " has won!");
 				} else {
 				  player = 2;
 				}
 			} else {
-				squareSelected.addClass("oh");
-				if(whowondisgame("oh")) {
+				squareSelected.addClass("fa fa-circle-thin");
+				if(whowondisgame("fa fa-circle-thin")) {
 					alert("Congrats! Player " + player + " has won!");
 				} else{
 					player = 1;

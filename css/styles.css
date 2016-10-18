@@ -19,9 +19,15 @@
 
 .square {
     width: 119px;
-    height: 119px;
+    height: 79px;
     float: left;
     cursor: pointer;
+    /*Center Font Awesome*/
+    text-align:center;
+    font-size: 3em;
+    padding-top: 40px;
+
+    /* End Font */
 }
 
 .bottom {
@@ -42,3 +48,5 @@
 .oh {
     background-color:blue;
 }
+
+/* End Players */
