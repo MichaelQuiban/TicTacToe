@@ -56,5 +56,9 @@ $(document).ready(function(){
 		} 
 		 
 	}
+	//Reset the game
+	$(".reset-game").on('click', function (event) {
+		
+	});
 
 });

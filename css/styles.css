@@ -26,7 +26,6 @@
     text-align:center;
     font-size: 3em;
     padding-top: 40px;
-
     /* End Font */
 }
 
@@ -50,3 +49,10 @@
 }
 
 /* End Players */
+
+/* Reset Button */
+.reset-game {
+    width:100px;
+    height:37px;
+    background-color: green;
+}
