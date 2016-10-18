@@ -32,3 +32,13 @@
     border-right: 1px solid black;
 }
 /* End the game board */
+
+/* Players */
+
+.ex {
+    background-color:red;
+}
+
+.oh {
+    background-color:blue;
+}
