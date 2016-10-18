@@ -21,6 +21,7 @@
     width: 119px;
     height: 119px;
     float: left;
+    cursor: pointer;
 }
 
 .bottom {
