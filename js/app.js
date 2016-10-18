@@ -58,7 +58,16 @@ $(document).ready(function(){
 	}
 	//Reset the game
 	$(".reset-game").on('click', function (event) {
-		
+		event.preventDefault();
+		$(".sq1").val("");
+		$(".sq2").val("");
+		$(".sq3").val("");
+		$(".sq4").val("");
+		$(".sq5").val("");
+		$(".sq6").val("");
+		$(".sq7").val("");
+		$(".sq8").val("");
+		$(".sq9").val("");
 	});
 
 });
