@@ -15,28 +15,46 @@ $(document).ready(function(){
 		} else {
 			// Bounce back and forth between the two players.
 			if (player === 1){
-				squareSelected.addClass('ex');
-
-				player = 2;
+				squareSelected.addClass("ex");
+				if(whowondisgame("ex")) {
+					alert("Congrats! Player " + player + " has won!");
+				} else {
+				  player = 2;
+				}
 			} else {
-				squareSelected.addClass('oh');
-
-				player = 1;
+				squareSelected.addClass("oh");
+				if(whowondisgame("oh")) {
+					alert("Congrats! Player " + player + " has won!");
+				} else{
+					player = 1;
+				}
 			}
 		}
 	});
 
-	//Check if the player won by checking squares!
-	function whoWon(symbol) {
-		if($(".sq1").hasClass(symbol) && $(".sq2").hasClass(symbol) && $(".sq3").hasClass(symbol) {
+	//Check if the player won by checking squares.
+	function whowondisgame(letter) {
+			//Horizontal win
+		if ($(".sq1").hasClass(letter) && $(".sq2").hasClass(letter) && $(".sq3").hasClass(letter)) {
 			return true;
-		} else if($(".sq4").hasClass(symbol) && $(".sq5").hasClass(symbol) && $(".sq6").hassClass(symbol)) {
+		} else if ($(".sq4").hasClass(letter) && $(".sq5").hasClass(letter) && $(".sq6").hasClass(letter)) {
 			return true;
-		} else if($(".sq7").hasClass(symbol) && $(".sq8").hasClass(symbol) && $(".sq9").hassClass(symbol)) {
+		} else if ($(".sq7").hasClass(letter) && $(".sq8").hasClass(letter) && $(".sq9").hasClass(letter)) {
+			return true;
+			//Diagonal win
+		} else if ($(".sq3").hasClass(letter) && $(".sq6").hasClass(letter) && $(".sq9").hasClass(letter)) {
+			return true;
+		} else if ($(".sq1").hasClass(letter) && $(".sq5").hasClass(letter) && $(".sq9").hasClass(letter)) {
+			return true;
+		} else if ($(".sq3").hasClass(letter) && $(".sq5").hasClass(letter) && $(".sq7").hasClass(letter)) {
+			return true;
+			// Misc Wins/Vertical
+		} else if ($(".sq1").hasClass(letter) && $(".sq4").hasClass(letter) && $(".sq7").hasClass(letter)) {
 			return true;
 		} else {
 			return false;
-		}
+		} 
+		 
 	}
 
 });
