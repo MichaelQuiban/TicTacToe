@@ -9,7 +9,7 @@
 
 #board {
     width: 360px;
-    margin: 0 auto;
+    margin: 100px auto 0px auto;
 }
 
 .row {
@@ -18,9 +18,16 @@
 }
 
 .square {
-    width: 120px;
-    height: 120px;
+    width: 119px;
+    height: 119px;
     float: left;
 }
 
+.bottom {
+    border-bottom: 1px solid black;
+}
+
+.right {
+    border-right: 1px solid black;
+}
 /* End the game board */
