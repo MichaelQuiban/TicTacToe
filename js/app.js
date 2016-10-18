@@ -1,5 +1,5 @@
-$(document).ready(function() {
-	var player1 = true;
-	var player2 = false;
-	
+$(document).ready(function(){
+	$(".square").on('click', function (event) {
+		console.log("hello world!");
+	});
 });
