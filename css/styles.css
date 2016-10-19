@@ -53,6 +53,9 @@
 /* Reset Button */
 .reset-game {
     width:100px;
-    height:37px;
-    background-color: green;
+    height:35px;
+    background-color: white;
+    font-weight:bold;
 }
+
+/* End */
